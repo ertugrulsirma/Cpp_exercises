@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 # source files
 set(SOURCES 
     src/main.cpp
+    src/number_systems.cpp
 )
 
 add_executable(app ${SOURCES})
