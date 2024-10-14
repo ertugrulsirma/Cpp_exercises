@@ -8,6 +8,11 @@ set(SOURCES
     src/main.cpp
     src/number_systems.cpp
     src/variable_types.cpp
+    src/OOP/classes.cpp
+    src/OOP/abstraction/circle.cpp
+    src/OOP/inheritance/cars.cpp
+    src/OOP/inheritance/ships.cpp
+    src/OOP/inheritance/vehicle.cpp
 )
 
 add_executable(app ${SOURCES})

@@ -1,5 +1,4 @@
-#include <iostream>
-#include <limits>
+#include "variable_types.h"
 
 void variable_types(){
     std::cout << sizeof(int) << std::endl;
