@@ -13,6 +13,7 @@ set(SOURCES
     src/OOP/inheritance/cars.cpp
     src/OOP/inheritance/ships.cpp
     src/OOP/inheritance/vehicle.cpp
+    src/OOP/polymorphism/polymorphism.cpp
 )
 
 add_executable(app ${SOURCES})
