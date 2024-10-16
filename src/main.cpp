@@ -9,6 +9,7 @@
 #include "OOP/inheritance/vehicle.h"
 #include "OOP/polymorphism/polymorphism.h"
 #include "OOP/polymorphism/pure_virtual_function.cpp"
+#include "convert_decimal_to_binary.cpp"
 
 int main(){
     std::cout << "Build with cmake.\n";
@@ -32,7 +33,7 @@ int main(){
                 1912, "RMS Titanic", 3);
     ship.ship_details();*/
 
-    Rectangle2 r2(2, 6);
+    /*Rectangle2 r2(2, 6);
     Shape2* shape2 = &r2;
 
     std::cout << "Calling Rectangle getArea function: " << r2.get_area() << std::endl;
@@ -42,10 +43,10 @@ int main(){
     shape2 = &c2;   // Referencing Shape class to Circle object
     
     std::cout << "Calling Circle getArea function: " << c2.get_area() << std::endl;
-    std::cout << "Calling Circle from shape pointer: " <<shape2->get_area() << std::endl << std::endl;
+    std::cout << "Calling Circle from shape pointer: " <<shape2->get_area() << std::endl << std::endl;*/
 
 
-    Shape4 * shape4[3]; 
+    /*Shape4 * shape4[3]; 
     //Shape4 * shape1 = new Shape4(); 
     // when you attempt to create objects of a Shape class, 
     // the compiler will complain that you’re trying to instantiate an object of an abstract class. 
@@ -63,7 +64,17 @@ int main(){
     shape4[2] = &s4;
 
     for(int i=0; i<3; i++)
-        std::cout << shape4[i]->getArea() << std::endl;
+        std::cout << shape4[i]->getArea() << std::endl;*/
 
+    int int_value = 13.9;
+    std::cout << int_value << std::endl; //implicit casting
+
+    float float_value = 13.9;
+    std::cout << (int)float_value << std::endl; //explicit casting
+
+    convert_decimal_to_binary(5);
+    convert_decimal_to_binary(6);
+    convert_decimal_to_binary(16);
+    
     return 0;
 }
